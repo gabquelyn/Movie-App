@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.controls button{
+    border-radius: 50%;
+    background-color: rgb(207, 102, 121, 0.4);
+    backdrop-filter: blur(2rem);
+    padding: .5rem;
+    outline: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
