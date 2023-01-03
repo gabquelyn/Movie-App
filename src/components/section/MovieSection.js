@@ -39,7 +39,7 @@ const searchTermHandler = (event) => {
   }
 
   let main;
-  const { loading, error, fetchedData } = useFetch(URL, null);
+  const { loading, fetchedData } = useFetch(URL, null);
 
   if(fetchedData.length > 0){
     main = fetchedData.map((movieData) => {
