@@ -1,0 +1,26 @@
+.spinner::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .spinner::before{
+        height: 40px;
+        width: 40px;
+    }
+}
